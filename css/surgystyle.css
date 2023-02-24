@@ -1,0 +1,158 @@
+.btn {
+    border-radius: 22px !important;
+    padding: 9px 35px !important;
+}
+
+.topbar {
+    background: url(../topbarbanner.jpg);
+}
+
+@media (max-width:950px) {
+    .disnone {
+        display: none;
+    }
+
+    .floatr {
+        float: left !important;
+    }
+}
+.floatr {
+    float: right;
+}
+
+.bg-blue {
+    background-color: #07294d;
+}
+
+.bannerheading {
+    margin-top: 120px;
+    background-color: #07294d;
+    padding: 8px;
+}
+
+.banner {
+    background: linear-gradient(to right, #bcc9d6, white, white);
+    border-bottom: 4px solid #53e5db;
+}
+
+.red {
+    color: rgb(152, 15, 15);
+}
+
+.botborder {
+    border: 1px dashed brown;
+}
+
+/* .dot{
+   
+} */
+.shadow {
+    box-shadow: 2px rgb(202, 200, 200);
+}
+
+.fiximg img {
+    width: 100%;
+    box-shadow: 6px 6px 13px 8px rgb(193, 192, 192)
+}
+
+.assohosp {
+    background-color: rgb(235, 233, 233);
+}
+
+.appointment {
+    background-color: #b9fbf7;
+}
+
+.shadow img {
+    height: 60px;
+    width: 60px;
+}
+
+.counter {
+    background: url(../bannercounter.jpg);
+    background-size: cover;
+}
+
+.user i {
+    font-size: 50px;
+}
+
+ol li {
+    list-style-type: disc;
+}
+
+.topfooter {
+    background-color: #11406b;
+}
+
+.list a li{
+    list-style-type: none;
+
+}
+
+.socialicon i {
+    font-size: x-large;
+}
+
+.bottomfooter {
+    background-color: #0a3052;
+}
+
+.bannermargin {
+    margin-top: -5px;
+}
+.lowpriceimg img{
+    width: 50%;
+    height: 120px;
+}
+/* .lowpriceimg{
+    background-color: white;
+} */
+.lowerprice{
+    background-color: #d1f4fd;
+}
+.accttdec a{
+    text-decoration: none;
+}
+.card img{
+    width: 50%;
+    height: 120px;
+    
+}
+.cardimg{
+    text-align: center ;
+}
+.card{
+    box-shadow: 4px 5px 10px 2px rgb(193 192 192);
+    border-radius: 7px;
+}
+.textdark a li{
+    color: black;
+    
+}
+.textdark a{
+    text-decoration: none;
+}
+.marginbot{
+    margin-bottom: -36px;
+}
+.appointment{
+    background-color:#edf0f2;
+}
+.errmsg{
+    color: red;
+}
+.form{
+    background-color: white;
+    padding: 50px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    padding-bottom: 70px;
+}
+/* .innercounter{
+    text-align: center;
+    width: 100%;
+} */
+/* .countmargin{
+   float: right;
+} */
