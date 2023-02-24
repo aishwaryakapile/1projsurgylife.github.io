@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surgy Life</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/surgystyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/surgy.js"></script>
+</head>
+
+<body>
+    <header>
+        <!-- topbar start here -->
+        <div class="topbar sticky-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="">
+                            <img src="surgylogo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-6 border-right disnone">
+                        <p class="mt-4 text-right font-weight-bold"><a href="tel:+91 1234657898" class="text-dark"><i
+                                    class="fa-solid fa-phone"></i> +91 1234657898</a></p>
+                    </div>
+                    <div class="col-md-3 disnone">
+                        <a href="bookappointment.html">
+                        <button class="btn btn-warning mt-3 font-weight-bold">BOOK APPOINTMENT</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- topbar ends here -->
+        <!-- navbar starts here -->
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-blue font-weight-bold sticky-top">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="container">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link pl-5" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link pl-5" href="lowestprice.html">OUR LOWEST PRICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link pl-5" href="specialitywiseprice.html">SPECIALITY WISE PRICES</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link pl-5" href="bookappointment.html">BOOK APPOINTMENT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link pl-5" href="contactus.html">CONTACT US</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar ends here -->
+    </header>
+    <!-- banner section starts -->
+    <section class="counter bannermargin">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-white">
+                    <h3 class="pt-5 pb-4">Book Appointment</h3>
+                </div>
+                <div class="col-md-6 text-white lowestprices">
+                    <p class="pt-5 pb-4 font-weight-bold floatr">Home / <span class="text-warning">Book
+                            Appointment</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner section ends here -->
+    <!-- appointment form starts here -->
+    <section class="appointment">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8">
+                    <div class="form rounded">
+                        <form name="f1" method="post" onsubmit="return validate()" action="index.html">
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <label for="firstname">Name</label>
+                                    <input type="text" name="fname" class="form-control" id="firstname"
+                                        placeholder="Enter Your First Name">
+                                    <div id="fnameNote" class="errmsg"></div>
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <label for="City">City</label>
+                                    <input type="text" name="lname" class="form-control" id="City"
+                                        placeholder="Enter Your City">
+                                    <div id="lnameNote" class="errmsg"></div>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <label for="phone">Phone No.</label>
+                                    <input type="text" name="Phone" class="form-control" id="phone"
+                                        placeholder="Enter Your phone No.">
+                                    <div id="PhoneNote" class="errmsg"></div>
+                                </div>
+
+                                <div class="col-md-6 form-group">
+                                    <label for="emailid">Email</label>
+                                    <input type="text" name="email" class="form-control" id="emailid"
+                                        placeholder="Enter Your Email Id">
+                                    <div id="emailNote" class="errmsg"></div>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <label for="address">Address</label>
+                                    <input type="text" name="Address" class="form-control" id="address"
+                                        placeholder="Enter Your Address">
+                                    <div id="AddressNote" class="errmsg"></div>
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Message</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <div>
+                                <input type="submit" class="bg-info btn float-right text-light font-weight-bold" value="Book Appointment" onclick="book()">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        </div>
+    </section>
+<!-- appointment form ends here -->
+    <!-- topfooter section starts here -->
+    <footer>
+        <section class="topfooter">
+            <div class="container pt-4">
+                <div class="row pb-3 text-light">
+                    <div class="col-md-3">
+                        <h5 class="pb-3">About Surgylife</h5>
+                        <p>SurgyLife is a multi-speciality healthcare platform delivering a hassle-free experience for
+                            all
+                            your surgeries and medical needs with personalized care.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h5 class="pb-3"> Quick Links</h5>
+                        <ul class="list pl-0">
+                            <a href="" class="text-decoration-none text-light">
+                                <li><i class="fa fa-angle-right text-warning"></i> Appointment</li>
+                            </a>
+                            <a href="" class="text-decoration-none text-light">
+                                <li><i class="fa fa-angle-right text-warning"></i> Privacy & policy</li>
+                            </a>
+                            <a href="" class="text-decoration-none text-light">
+                                <li><i class="fa fa-angle-right text-warning"></i> Disclaimer</li>
+                            </a>
+                            <a href="" class="text-decoration-none text-light">
+                                <li><i class="fa fa-angle-right text-warning"></i> Contact Us</li>
+                            </a>
+                            <a href="" class="text-decoration-none text-light">
+                                <li><i class="fa fa-angle-right text-warning"></i> Treatments</li>
+                            </a>
+                        </ul>
+
+                    </div>
+                    <div class="col-md-3">
+                        <h5 class="pb-3">Corporate Office</h5>
+                        <div class="container pl-0">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <i class="fa-solid fa-house pr-3 text-warning"></i>
+                                </div>
+                                <div class="col-md-10">
+                                    <p class="mb-0">C2, Amrutha hills,</p>
+                                    <p class="mb-0">Punjagutta Officers Colony,</p>
+                                    <p class="mb-0">Punjagutta, Hyderabad</p>
+                                    <p class="mb-0">Telangana 500082</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h5 class="pb-3">Contact Us</h5>
+                        <div class="container pl-0">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <i class="fa-solid fa-phone pr-3 text-warning mb-2"></i>
+                                   </div>
+                                <div class="col-md-10">
+                                    <p class="mb-2">+91 1234657898</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2">
+                                     <i class="fa-solid fa-envelope pr-3 text-warning"></i>
+                                </div>
+                                <div class="col-md-10">
+                                    <p>surgylife@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 socialicon">
+                                    <a href=""> <i class="fa-brands fa-facebook text-warning"></i></a>
+                                </div>
+                                <div class="col-md-3 socialicon">
+                                    <a href=""> <i class="fa-brands fa-linkedin text-warning"></i></a>
+                                </div>
+                                <div class="col-md-3 socialicon">
+                                    <a href=""> <i class="fa-brands fa-instagram text-warning"></i></a>
+                                </div>
+                                <div class="col-md-3 socialicon">
+                                    <a href=""> <i class="fa-brands fa-twitter text-warning"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- topfooter section ends here -->
+        <section class="bottomfooter">
+            <div class="container">
+                <div class="row text-light text-center pt-2 font-weight-bold">
+                    <div class="col-md-6">
+                        <p>© Copyrights 2023 SurgyLife All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>Designed by AISHWARYA KAPILE</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- WhatsApp Chta button start -->
+    <script>
+        var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?67153';
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = url;
+        var options = {
+            "enabled": true,
+            "chatButtonSetting": {
+                "backgroundColor": "#4dc247",
+                "ctaText": "Message Us",
+                "borderRadius": "25",
+                "marginLeft": "0",
+                "marginBottom": "50",
+                "marginRight": "50",
+                "position": "left"
+            },
+            "brandSetting": {
+                "brandName": "SurgyLife",
+                "brandSubTitle": "Typically replies within a day",
+                "brandImg": "https://www.surgylife.com/images/logo.png",
+                "welcomeText": "Hi there!\nHow can I help you?",
+                "messageText": "Hello, I have a question about {{page_link}}",
+                "backgroundColor": "#0a5f54",
+                "ctaText": "Start Chat",
+                "borderRadius": "25",
+                "autoShow": false,
+                "phoneNumber": "1234657898"
+            }
+        };
+        s.onload = function () {
+            CreateWhatsappChatWidget(options);
+        };
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+    </script>
+    <!-- WhatsApp Chat button ends -->
+    <!-- call button  -->
+    <!-- GetButton.io widget -->
+    <script type="text/javascript">
+        (function () {
+            var options = {
+                call: "+91 123456789", // Call phone number
+                call_to_action: "call us", // Call to action
+                button_color: "#FF6550", // Color of button
+                position: "right", // Position may be 'right' or 'left'
+            };
+            var proto = 'https:', host = "getbutton.io", url = proto + '//static.' + host;
+            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+            s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        })();
+    </script>
+    <!-- /GetButton.io widget -->
+    <!-- call button ends -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
